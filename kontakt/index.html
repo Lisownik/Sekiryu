@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="../global/footer/style.css">
+  <link rel="stylesheet" href="../global/nav-bar/style.css">
+  <link rel="stylesheet" href="../global/global.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div include-html="../global/nav-bar/index.html"></div>
+<div id="menu" class="hamburger">
+  <ul>
+    <li onclick="window.location.href='../main/'">STRONA GŁÓWNA</li>
+    <li onclick="window.location.href='../aktualnosci/'">AKTUALNOŚCI</li>
+    <li onclick="window.location.href='../historia/'">HISTORIA</li>
+    <li onclick="window.location.href='../lista-produktow/'">PRODUKTY</li>
+    <li onclick="window.location.href='../regulamin/'">REGULAMIN</li>
+    <li onclick="window.location.href='../kontakt/'">KONTAKT</li>
+  </ul>
+</div>
+<nav id="strona-info">
+  <p>
+    <a href="../main">Strona Główna</a> > <strong>Formularz Kontaktowy</strong>
+  </p>
+</nav>
+<main>
+  <h1 class="spaced_out">
+    KONTAKT
+  </h1>
+  <p>Firma OMC jest dystrybutorem produktów marki MASAHIRO w Polsce.
+    Zapraszamy do współpracy odbiorców hurtowych, sklepy z nożami, kucharzy, restauratorów, hotelarzy, blogerów, dekoratorów wnętrz i projektantów.</p>
+  <img src="../Assets/images/Group113.png" alt="Dane">
+  <section>
+    <h2 class="spaced_out">
+      Formularz kontaktowy
+    </h2>
+    <form action="#">
+      <div>
+        <div class="input-group"><label for="imiennazwisko">Imię I Nazwisko</label><input class="freaky-input" placeholder="Jan Kowalski" required type="text" id="imiennazwisko" name="imiennazwisko"></div>
+        <div class="input-group"><label for="email">Email</label><input type="text" class="freaky-input" placeholder="jankowalski@email.pl" name="email" required id="email"></div>
+        <div class="input-group"><label for="telefon">Telefon</label><input type="text" class="freaky-input" placeholder="+48 123 456 789" name="telefon" id="telefon"></div>
+      </div>
+      <div class="input-group">
+        <label for="msg">
+          Wiadomść
+        </label>
+        <input class="freaky-input" type="text" name="msg" required id="msg" placeholder="Wiadomość">
+      </div>
+      <div class="input-group">
+        <label for="text"><span>Udowodnij, że nie jesteś robotem</span> <canvas></canvas></label>
+        <input class="freaky-input" placeholder="lp8lk" id="text" name="text" type="text" required>
+      </div>
+      <div class="input-group">
+        <input type="checkbox" name="accept" id="accept" required>
+        <label for="accept">
+          Aenean accumsan magna id dapibus vehicula. Sed viverra mi posuere auctor porttitor. Nullam lectus mauris, tincidunt semper efficitur eu, ullamcorper ac dui. Duis lobortis vitae felis sed interdum. Donec ut blandit mi. Donec sagittis purus at nulla dapibus, vitae ultricies ligula dapibus. Pellentesque lobortis nisl at nibh imperdiet, vitae porttitor turpis malesuada. Pellentesque commodo justo a justo ultricies maximus.
+        </label>
+      </div>
+      <button class="std-button">
+        Wyślij wiadomość
+      </button>
+    </form>
+  </section>
+</main>
+<div include-html="../global/footer/index.html"></div>
+<script src="../global/include.js"></script>
+<script src="../global/global.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

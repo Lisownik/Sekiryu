@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../global/footer/style.css">
+    <link rel="stylesheet" href="../global/nav-bar/style.css">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div include-html="../global/nav-bar/index.html"></div>
+<div id="menu" class="hamburger">
+    <ul>
+        <li onclick="window.location.href='../main/'">STRONA GŁÓWNA</li>
+        <li onclick="window.location.href='../aktualnosci/'">AKTUALNOŚCI</li>
+        <li onclick="window.location.href='../historia/'">HISTORIA</li>
+        <li onclick="window.location.href='../lista-produktow/'">PRODUKTY</li>
+        <li onclick="window.location.href='../regulamin/'">REGULAMIN</li>
+        <li onclick="window.location.href='../kontakt/'">KONTAKT</li>
+    </ul>
+</div>
+<nav id="strona-info">
+    <p>
+        <a href="../main">Strona Główna</a> > <a href="./">Produkty</a> > <strong>Kuroichi</strong>
+    </p>
+</nav>
+<main>
+    <header>
+        <h1 class="spaced_out">KUROICHI</h1>
+        <img src="../Assets/images/lista-produktow/glowny-noz.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur. Nisi sit ullamcorper adipiscing vulputate tincidunt condimentum id lacus fringilla. Justo blandit pellentesque leo enim. Sapien dolor nec bibendum maecenas quis mauris. Sed enim et vulputate malesuada placerat. Enim ullamcorper lorem turpis mattis nisi sollicitudin eget dui. Id euismod eget ipsum ornare orci dictumst mattis libero.</p>
+        <div>
+            <label for="sortBy">Sortowanie</label>
+            <select name="sortBy" id="sortBy">
+                <option value="asc">cena rosnąco</option>
+                <option value="desc">cena malejąco</option>
+            </select>
+        </div>
+    </header>
+    <form>
+        <div class="filters categories">
+            <h2 class="spaced_out">KATEGORIE</h2>
+            <hr>
+            <a href="./">BLUE CARBON ブルーカーボン</a>
+            <hr>
+            <a href="./" class="selected">KUROICHI 黒内</a>
+            <hr>
+            <a href="./">RYOMA SAKAMOTO 坂本龍馬</a>
+            <hr>
+            <a href="./">ORIGINAL オリジナル</a>
+            <hr>
+            <a href="./">HOME 家</a>
+            <hr>
+            <a href="./">YAKITORI 焼き鳥</a>
+            <hr>
+        </div>
+        <div class="filters groups">
+            <h2 class="spaced_out">GRUPA</h2>
+            <hr>
+            <div>
+                <input type="checkbox" name="mv-h" id="mv-h"><label for="mv-h">SERIA MV-H</label>
+            </div>
+            <div>
+                <input type="checkbox" name="mv" id="mv"><label for="mv">SERIA MV</label>
+            </div>
+            <div>
+                <input type="checkbox" name="bwh" id="bwh"><label for="bwh">SERIA BWH</label>
+            </div>
+            <div>
+                <input type="checkbox" name="bassen" id="bassen"><label for="bassen">SERIA BASSEN</label>
+            </div>
+            <div>
+                <input type="checkbox" name="kamienie-akcesoria" id="kamienie-akcesoria"><label for="kamienie-akcesoria">KAMIENIE I AKCESORIA</label>
+            </div>
+            <div>
+                <input type="checkbox" name="msc" id="msc"><label for="msc">SERIA MSC</label>
+            </div>
+        </div>
+        <div class="filters length">
+            <h2 class="spaced_out">DŁUGOŚĆ</h2>
+            <hr>
+            <div>
+                <input type="checkbox" name="len-6-11" id="len-6-11"><label for="len-6-11">6-11 CM</label>
+            </div>
+            <div>
+                <input type="checkbox" name="len-12-15" id="len-12-15"><label for="len-12-15">12-15 CM</label>
+            </div>
+            <div>
+                <input type="checkbox" name="len-16-19" id="len-16-19"><label for="len-16-19">16-19 CM</label>
+            </div>
+            <div>
+                <input type="checkbox" name="len-20-24" id="len-20-24"><label for="len-20-24">20-24 CM</label>
+            </div>
+            <div>
+                <input type="checkbox" name="len-27" id="len-27"><label for="len-27">27+ CM</label>
+            </div>
+        </div>
+        <div class="filters price">
+            <h2 class="spaced_out">CENA</h2>
+            <hr>
+            <div>
+                <input type="number" value="0" name="price-min" id="price-min" class="freaky-input"> <label for="price-min">zł</label><span> - </span><input class="freaky-input" type="number" value="5000" name="price-max" id="price-max"> <label for="price-max">zł</label>
+            </div>
+        </div>
+        <div class="buttons-wow">
+            <button class="std-button black">
+                filtruj produkty
+            </button>
+        </div>
+
+    </form>
+    <div id="product-list">
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+            <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-1.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-2.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-3.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-4.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-5.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-6.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-7.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-8.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-9.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+        <div class="product">
+            <img src="../Assets/images/lista-produktow/lista-produktow-noze/SR100-Santoku-165mm1-10.png" alt="Zdjęcie noża">
+            <h3>Przykładowa nazwa noże 165 mm (10501)</h3>
+            <p>1049,00 zł <i>info</i></p>
+            <strong>949,00 zł</strong>
+             <button class="std-button" onclick="window.location.href='../produkt/'">zobacz więcej</button>
+        </div>
+    </div>
+    <div class="page-list">
+        <ul>
+            <li><a href="./"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></a></li>
+            <li><a href="./">01</a></li>
+            <li><a href="./">02</a></li>
+            <li class="selected"><a href="./">03</a></li>
+            <li><a href="./">04</a></li>
+            <li><a href="./">05</a></li>
+            <li><a href="./">...</a></li>
+            <li><a href="./">10</a></li>
+            <li><a href="./">11</a></li>
+            <li><a href="./">12</a></li>
+            <li><a href="./">13</a></li>
+            <li><a href="./"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a></li>
+        </ul>
+    </div>
+</main>
+<div include-html="../global/footer/index.html"></div>
+<script src="../global/include.js"></script>
+<script src="../global/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+#reg-definition ul, #reg-info ol, #reg-info ul, #reg-definition ol {
+    padding-inline-start: 40px;
+    list-style-type: decimal;
+}
+li{
+    padding: 4px 0;
+}
+section{
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 50px 1fr 1fr;
+}
+section > h2{
+    align-self: center;
+    justify-self: center;
+    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+}
+#reg-definition {
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+}
+#reg-info {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+}
+#reg-definition h5 {
+    margin: 20px 0;
+}
+article{
+    margin: 30px 0;
+}
+main{
+    margin-top: 50px;
+}
+#strona-info{
+    all: initial;
+    padding: 20px;
+}
+#reg-info ol li ol{
+    list-style-position: inside;
+    list-style-type: lower-latin;
+}
+#reg-info ol li ol li::before{
+    all: unset;
+}
+#reg-info .inlist_margin_top {
+    margin-top: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: initial;
+}

@@ -1,0 +1,111 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+main h1 {
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
+  align-self: center;
+  justify-self: center;
+}
+main div:nth-of-type(1) {
+  width: calc(100% - 280px);
+  display: grid;
+  grid-row: 2/span 1;
+  grid-column: 1/-1;
+  justify-self: center;
+  gap: 16px;
+}
+main div:nth-of-type(1) article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 25px;
+  margin: 25px 0;
+}
+main div:nth-of-type(1) article img {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+main div:nth-of-type(1) article h2 {
+  width: 80%;
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+main div:nth-of-type(1) article p {
+  width: 70%;
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+main div:nth-of-type(1) article a {
+  margin: 5px 0;
+  grid-column: 1/span 1;
+  grid-row: 4/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(1n) {
+  grid-column: 1/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(2n) {
+  grid-column: 2/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(2n) img {
+  margin-top: 20px;
+  grid-column: 1/span 1;
+  grid-row: 4/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(2n) h2 {
+  width: 80%;
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(2n) p {
+  width: 70%;
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(2n) a {
+  margin: 5px 0;
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+main div:nth-of-type(1) article:nth-of-type(2n) p.post-date {
+  top: 300px;
+  bottom: 0;
+}
+main div:nth-of-type(1) article p.post-date {
+  height: fit-content;
+  position: relative;
+  bottom: 500px;
+  left: 15px;
+  background: #000;
+  border-radius: 10px;
+  padding: 7px 10px;
+  width: fit-content;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  color: white;
+}
+main div.page-list {
+  grid-column: 1/-1;
+  grid-row: 3/span 1;
+  justify-self: center;
+  align-self: center;
+}
+main div.page-list ul {
+  display: grid;
+  gap: 5px;
+}
+
+svg {
+  height: 16px;
+}
+
+@media screen and (max-width: 1623px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
