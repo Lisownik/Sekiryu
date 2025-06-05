@@ -3,7 +3,7 @@ footer {
     display: grid;
     position: relative;
     background-color: #000;
-    background-image:  url('../../Assets/images/footer-img.png');
+    background-image:  url('../../Assets/images/footer-img.webp');
     background-size: contain;
     background-repeat: no-repeat;
     /* filter: brightness(50%); */
