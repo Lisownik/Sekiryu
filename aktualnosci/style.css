@@ -25,6 +25,7 @@ main div:nth-of-type(1) article {
   margin: 25px 0;
 }
 main div:nth-of-type(1) article img {
+  width: 100%;
   grid-column: 1/span 1;
   grid-row: 1/span 1;
 }
@@ -50,6 +51,7 @@ main div:nth-of-type(1) article:nth-of-type(2n) {
   grid-column: 2/span 1;
 }
 main div:nth-of-type(1) article:nth-of-type(2n) img {
+  width: 100%;
   margin-top: 20px;
   grid-column: 1/span 1;
   grid-row: 4/span 1;
