@@ -117,8 +117,13 @@ main{
 svg{
   height: 16px;
 }
-@media screen and (max-width: 1623px) {
+@media screen and (max-width: 1036px) {
   main{
     grid-template-columns: 1fr;
+    div.posts{
+      article:nth-of-type(2n) {
+        grid-column: 1/1;
+      }
+    }
   }
 }
