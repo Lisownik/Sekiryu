@@ -1,8 +1,8 @@
 
 const urls = [
     '../Assets/images/main/bidonztlem21.webp',
-    '../Assets/images/aktualnosci-produkt-noze.png',
-    '../Assets/images/footer-img.png',
+    '../Assets/images/aktualnosci-produkt-noze.webp',
+    '../Assets/images/footer-img.webp',
 ]
 let currIndex = 0
 function loadWallpaper(index) {
