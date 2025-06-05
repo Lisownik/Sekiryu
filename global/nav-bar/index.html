@@ -13,22 +13,7 @@
         </form>
         <img src="../Assets/images/user-solid.svg" alt="lupka" id="user">
         <img src="../Assets/images/bag-shopping-solid.svg" alt="lupka" id="cart">
-        <img src="../Assets/images/bars-solid.svg" alt="lupka" id="burger-menu">
+        <img src="../Assets/images/bars-solid.svg" alt="lupka" id="burger-menu" onclick="toggleBurger()">
 
     </div>
 </nav>
-<script>
-        let burgerIcon, burgerMenu;
-        setTimeout(() => {
-            burgerIcon = document.getElementById('burger-menu');
-            burgerMenu = document.getElementById('menu');
-            burgerIcon.addEventListener('click', () => {
-                burgerMenu.classList.toggle('toggled');
-                if (burgerMenu.classList.contains('toggled')) {
-                    burgerIcon.setAttribute('src', '../Assets/images/xmark-solid.svg');
-                } else{
-                    burgerIcon.setAttribute('src', '../Assets/images/bars-solid.svg');
-                }
-            })
-        }, 100)
-</script>
